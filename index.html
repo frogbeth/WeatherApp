@@ -4,18 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> <!--css file link (req 1)-->
+    <link rel="stylesheet" href="styles.css"> 
     <title>Weather App</title>
-</head> 
+</head>
 
 <body>
-    <h1>Weather App</h1>
 
-    <input type="text" id="locationSearch" name="locationSearch" placeholder="Search for a location">
-    <button type="submit" id="submitButton" name="submitButton" onclick="fetchData()">Search</button>
+    <header>
+        <h1>Weather App</h1>
+    </header>
+    <div class="search">
+        <input type="text" id="locationSearch" name="locationSearch" placeholder="Search for a location">
+        <button type="submit" id="submitButton" name="submitButton" onclick="fetchData()">Search</button>
+    </div>
+
+    <div class="weatherDisplay" id="weatherDisplay">
+        <div class="location" id="location"></div>
+    </div>
 
 </body>
-
-<script src="scripts.js"></script> <!--js file link (req 1)-->
-
+<script src="scripts.js"></script>
 </html>

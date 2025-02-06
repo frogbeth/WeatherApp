@@ -1,3 +1,29 @@
 body{
     text-align: center;
 }
+h1{
+    font-size: 50px;
+    margin-top: 40px;
+}
+.search input {
+    border-radius: 15px 0 0 15px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+}
+.search button {
+    border-radius: 0 15px 15px 0;
+    border: 2px solid #ccc;
+    padding: 10px 15px;
+    background-color: #7bb4ea;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+.search button:hover {
+    background-color: #3d5291;
+}
+.weatherDisplay{
+    padding: 200px;
+}
