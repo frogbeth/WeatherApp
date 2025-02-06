@@ -8,14 +8,21 @@ async function fetchData() { //reads input from the location search bar and logs
       .then(function (response) {
         console.log(response);
       })
+      // .then(response => {
+      //   const resolvedAddress = response.resolvedAddress;
+      //   const description = response.currentConditions.conditions;
+      //   const temperature = response.currentConditions.temp;
+      //   console.log(resolvedAddress);
+      //   console.log(description);
+    
+      //   document.getElementById('location').textContent = resolvedAddress;
+      //   document.getElementById('description').textContent = description;
+      //   document.getElementById('temperature').textContent = `${temperature}°F`;
+      // })
 
     if (!response.ok) {
       throw new Error('Failed to fetch weather data');
     }
-
-    const data = JSON.parse(response);
-    document.getElementById("location").innerHTML = data.address;
-
 
   } catch (error) {
     document.getElementById('weatherDisplay').innerHTML = 'Failed to load weather data.';

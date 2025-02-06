@@ -1,5 +1,6 @@
 body{
     text-align: center;
+    background: rgb(211, 219, 243);
 }
 h1{
     font-size: 50px;
@@ -25,5 +26,23 @@ h1{
     background-color: #3d5291;
 }
 .weatherDisplay{
-    padding: 200px;
+    margin-top: 45px;
+    padding: 110px;
+    background-color: #88c3ee;
+    border-radius: 20px;
+    margin-left: 475px;
+    margin-right: 475px;
+}
+.temperature{
+    font-size: 75px;
+}
+.degree{
+    font-size: 50px;
+}
+.location{
+    font-size: 40px;
+    padding: 30px;
+}
+.description{
+    font-size: 25px;
 }
